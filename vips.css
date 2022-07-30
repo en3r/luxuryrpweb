@@ -284,6 +284,8 @@ body {
 }
 
 
+
+
 .contenedor_loader{
 	background-color: black;
 	background-size: 120em;
@@ -736,7 +738,7 @@ figure {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/fondo.png);
+	background-image: url(https://cdn.discordapp.com/attachments/800989018795409419/1002794217745166376/06608FDB-A6E9-49D4-BB37-12D97467645B.jpg?width=942&height=530);
 	background-size: cover;
 	background-position: top center;
 	/* height: 50%; */

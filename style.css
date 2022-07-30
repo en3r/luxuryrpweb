@@ -339,6 +339,7 @@ figure {
 	color: white;
 }
 .brand p span {
+	
 	color: rgb(10, 145, 255);
 }
 
@@ -348,6 +349,7 @@ figure {
 	top: -1em;
 	text-transform: uppercase;
 	color: white;
+	
 }
 .brand h1 span {
 	color: rgb(10, 145, 255);
@@ -530,6 +532,8 @@ figure {
 
 	
 }
+
+
 
 
 
@@ -977,6 +981,7 @@ html {
 }
 #footer .social-item:hover img {
 	filter: grayscale(0);
+	
 }
 #footer p {
 	color: white;

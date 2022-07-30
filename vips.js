@@ -1,3 +1,4 @@
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -60,22 +61,28 @@ window.sr = ScrollReveal();
 
 
 
-
-
 window.addEventListener('load', () => {
 	const contenedor_loader = document.querySelector('.contenedor_loader')
 	contenedor_loader.style.opacity = 0
 	contenedor_loader.style.visibility = 'hidden'
-
+	
 }) 
 
 document.addEventListener('DOMContentLoaded', function () {
-  let figure = document.getElementById('photo');
-  let directions = document.getElementById('directions');
-
-  directions.addEventListener('change', function () {
-    figure.setAttribute('tooltip-dir', this.value);
-  });
+	let figure = document.getElementById('photo');
+	let directions = document.getElementById('directions');
+	
+	directions.addEventListener('change', function () {
+		figure.setAttribute('tooltip-dir', this.value);
+	});
 });
 
-
+$(document).ready(function () {
+	$(".video-gallery").magnificPopup({
+	  delegate: "a",
+	  type: "iframe",
+	  gallery: {
+		enabled: true
+	  }
+	});
+  });
