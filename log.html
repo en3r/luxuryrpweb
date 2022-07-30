@@ -1,3 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vips.css">
+    <title>Luxury VIPS</title>
+</head>
+<body>
+  
+  <h1>
+    <div class="content-select">
+      <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+      <i></i>
+    </div>
+  </h1>
+    <div class="contenedor_loader">
+        <div class="loader"></div>
+      </div>
+    <div class="l-container">
+        <div class="b-game-card">
+            <a href="https://cfx.re/join/dkqge3" target="_blank">
+          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_1.jpg);" href="https://cfx.re/join/dkqge3" target="_blank"></div>
+            </a>
+        </div>
+        <div class="b-game-card">
+            <a href="https://cfx.re/join/dkqge3" target="_blank">
+          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_2.jpg);"></div>
+            </a>
+        </div>
+        <div class="b-game-card">
+            <a href="https://cfx.re/join/dkqge3" target="_blank">
+          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_3.jpg);"></div>
+        </a> 
+        </div>
+        <div class="b-game-card">
+            <a href="https://cfx.re/join/dkqge3" target="_blank">
+          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_4.jpg);"></div>
+           </a>
+        </div>
+      </div>
+
+
+    <script src="./vips.js"></script>
+</body>
+</html> -->
+
+<!-- href="https://cfx.re/join/dkqge3" target="_blank"  -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +60,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="log.css">
     <title>[LATAM] Luxury RP</title>
     <link rel="icon" href="img/luxury_logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV" crossorigin="anonymous"/>
@@ -37,13 +92,13 @@
             <div class="bar" ></div>
           </div>
           <ul>
-            <li><a href="#hero" data-after="Home" class="activo">INICIO</a></li>
-            <li><a href="#about" data-after="About">SOBRE NOSOTROS</a></li>
-            <li><a href="#projects" data-after="Projects">NORMATIVAS</a></li>
+            <li><a href="./index.html" data-after="Home">INICIO</a></li>
+            <!-- <li><a href="#projects" data-after="Projects">NORMATIVAS</a></li> -->
             <li><a href="./vips.html"  data-after="Service">TIENDA</a></li>
+            <!-- <li><a href="#about" data-after="About">SOBRE NOSOTROS</a></li> -->
             <li><a href="./forum.html" data-after="Contact">CONTACTO</a></li>
-            <li><a href="./log.html" data-after = "Log">Acceso</a></li>
-            <li><a href="https://cfx.re/join/dkqge3" target="_blank" data-after = "Play" class="cta3" >Jugar</a></li> 
+            <li><a href="./log.html" data-after = "Log" class="activo" >Acceso</a></li>
+            <li><a href="https://cfx.re/join/dkqge3" target="_blank" data-after = "Play" class="cta3"  >Jugar</a></li>
             
           </ul>
         </div>
@@ -53,31 +108,62 @@
   <!-- End Header -->
 
   
-  <a id="youtube" onclick="history.go(0)">
-    <div class=".logo">
-      <img src="./img/luxury_logo.png" alt="img">
-    </div>
-  </a>
+
+  
   
   
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
       <div>
-        <h1>El mejor <span></span></h1>
-        <h1>servidor<span></span></h1>
-        <h1>para el mejor.<span></span></h1>
-        <a href="https://discord.gg/9tdjhb75"  target="_blank" type="button" class="cta">Discord </a>
-
+        <h1>Bienvenido al <span></span></h1>
+        <!-- <h1><span></span></h1> -->
+        <h1>Inicio de sesion/Registro.<span></span></h1>
       </div>
     </div>
   </section>
   
+  <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
 
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Registro</label>
+					<input type="text" name="txt" placeholder="Nombre" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Contraseña" required="">
+					<button>Registrarse</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Iniciar sesion</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Contraseña" required="">
+					<button>Iniciar sesion</button>
+				</form>
+			</div>
+	</div>
+
+  <a id="youtube" onclick="history.go(0)">
+    <div class=".logo">
+      <img src="./img/luxury_logo.png" alt="img">
+    </div>
+  </a>
+  
+
+<!--   <div id="discord">
+    <div class="discord container">
+      <div>
+        <a href="https://discord.gg/9tdjhb75"  target="_blank" type="button" class="cta4">Sobre Nosotros </a>
+      </div>
+    </div>
+  </div> -->
   
   
   <!-- Projects Section -->
-  <!-- <section id="projects">
+ <!--  <section id="projects">
     <div class="projects container">
       <div class="projects-header">
         <h1 class="section-title">Recent <span>Projects</span></h1>
@@ -149,10 +235,12 @@
       <!-- End Projects Section -->
       
       <!-- End Hero Section  -->
-    
+      
+
+      
     
       <!-- Service Section -->
-     <!--  <section id="services">
+<!--       <section id="services">
         <div class="services container">
           <div class="navbar">
           <div class="service-top" >
@@ -190,11 +278,9 @@
       <!-- End Service Section -->
       
       <!-- About Section -->
-      <section id="about">
-        <div class="navbar4">
+      <!-- <section id="about">
         <div class="about container" >
           <div class="col-left" >
-            
             <div class="about-img" id="animacion3">
               <img src="./img/img-2.png" alt="img">
             </div>
@@ -210,17 +296,17 @@
         <a href="#" class="cta">Download Resume</a>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End About Section -->
 
   <!-- Contact Section -->
-  <!-- <section id="contact">
+<!--   <section id="contact">
     <div class="contact container">
       <div class="navbar3">
-        <div>
-          <h1 class="section-title">Contact <span>info</span></h1>
-        </div>
-        <div class="navbar2">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="navbar2">
       <div class="contact-items">
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
@@ -461,7 +547,7 @@
   
   <!-- End Footer -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="./app.js"></script>
+  <script src="./log.js"></script>
   <script>
     let lista = document.querySelectorAll('.lista');
     for(let i=0; i<lista.length; i++){

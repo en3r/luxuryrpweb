@@ -17,6 +17,7 @@ body {
 
 
   }
+  
 
 
 
@@ -341,7 +342,6 @@ figure {
 .brand p span {
 	color: rgb(10, 145, 255);
 }
-
 .brand h1 {
 	font-size: 4.3rem;
 	text-align: left;
@@ -362,10 +362,11 @@ figure {
 	top: 0;
 	width: 100vw;
 	height: auto;
-	-webkit-animation: desplazar 1s ease both 1 1s;
-	animation: desplazar 1s ease both 1 1s;
+	-webkit-animation: desplazar 1s ease both 1 0.1s;
+	animation: desplazar 1s ease both 1 0.1s;
 	
 }
+
 #header .header {
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0);
@@ -884,6 +885,8 @@ html {
 	/* max-width: 400px; */
 	width: 100%;
 }
+
+
 #contact .contact-item {
 	width: 80%;
 	padding: 20px;
@@ -898,6 +901,8 @@ html {
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: 0.3s ease box-shadow;
 }
+
+
 #contact .contact-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
 }

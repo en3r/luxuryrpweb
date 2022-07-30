@@ -1,3 +1,5 @@
+
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -43,6 +45,7 @@ window.sr = ScrollReveal();
     origin: 'top',
     distance: '-500px'
 });
+
 window.sr = ScrollReveal();
   sr.reveal('.navbar2', {
     duration: 3000,
@@ -57,12 +60,9 @@ window.sr = ScrollReveal();
     distance: '-500px'
 });
 
-window.sr = ScrollReveal();
-  sr.reveal('.navbar4', {
-    duration: 3000,
-    origin: 'right',
-    distance: '-500px'
-});
+
+
+
 
 
 
@@ -76,12 +76,14 @@ window.addEventListener('load', () => {
 }) 
 
 document.addEventListener('DOMContentLoaded', function () {
-  let figure = document.getElementById('photo');
-  let directions = document.getElementById('directions');
-
-  directions.addEventListener('change', function () {
-    figure.setAttribute('tooltip-dir', this.value);
-  });
+	let figure = document.getElementById('photo');
+	let directions = document.getElementById('directions');
+	
+	directions.addEventListener('change', function () {
+		figure.setAttribute('tooltip-dir', this.value);
+	});
 });
 
-
+$(".message a").click(function () {
+  $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+});
