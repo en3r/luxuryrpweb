@@ -303,29 +303,28 @@
         </div>
       </div>
 
-      <div class="contact-form">
-        <span class="circle one"></span>
-        <span class="circle two"></span>
+      <div class="contact-form" onload="load()" >
 
-        <form action="https://discord.com/api/webhooks/985010984953475124/rJvwfT9NoN5lKlfj1B9KnXfHAW85thYBHrHi6Wjhag3WXKDAT7D0JwTwSPdwaIUl-_wX" autocomplete="off">
+
+        <form  autocomplete="on" onsubmit="sendEmail(); reset(); return false;">
           <h3 class="title">Contactarnos</h3>
           <div class="input-container">
-            <input type="text" name="name" class="input" />
+            <input type="name" name="name" id="name" class="input" />
             <label for="">Nombre</label>
             <span>Nombre</span>
           </div>
           <div class="input-container">
-            <input type="email" name="email" class="input" autocomplete="on" />
+            <input type="email" name="email" id="email" class="input" autocomplete="on"  />
             <label for="">Email</label>
             <span>Email</span>
           </div>
           <div class="input-container">
-            <input type="tel" name="phone" class="input" />
+            <input type="steam" name="steam" id="steam" class="input" required />
             <label for="">ID (nombre steam/ID discord)</label>
             <span>ID (nombre steam/ID discord)</span>
           </div>
           <div class="input-container textarea">
-            <textarea name="message" class="input"></textarea>
+            <textarea name="message" id="message" class="input" required ></textarea>
             <label for="">Mensaje</label>
             <span>Mensaje</span>
           </div>
@@ -334,6 +333,7 @@
       </div>
     </div>
   </div>
+
   
   <!-- End Contact Section -->
 
@@ -565,12 +565,28 @@
     lista.forEach(elemens=>{
       elemens.addEventListener("mouseenter", function(event){
         let bg = document.querySelector('body');
-        /* let color = event.target.getAttribute('data-color'); */
         bg.style.backgroundColor = color;
+        let color = event.target.getAttribute('data-color');
       })
     })
   </script>
-  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Port : "2525",
+          Username : "luxuryrparg@outlook.com",
+          Password : "3AC96DC5BE42869340962E788E999FB685531F362A63BDC6A1F3B6EAD8B0A1736B4A023563B9B7F4964A1B2804881F09",
+          To : 'luxuryrparg@outlook.com',
+          From : document.getElementById("email").value,
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+      message => alert(message)
+      );
+    }
+</script>
 </body>
 
 

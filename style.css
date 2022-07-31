@@ -647,6 +647,7 @@ figure {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
+
 }
 #services .service-item {
 	flex-basis: 80%;
@@ -656,12 +657,13 @@ figure {
 	flex-direction: column;
 	padding: 50px;
 	border-radius: 10px;
-	background-image: url("https://media.discordapp.net/attachments/800989018795409419/1002030245249032284/unknown.png");
+	/* background-image: url("https://media.discordapp.net/attachments/800989018795409419/1002030245249032284/unknown.png"); */
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+
 }
 
 @keyframes mover {
@@ -684,7 +686,7 @@ figure {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) ;
 	opacity: 0.9;
 	z-index: -1;
 }
