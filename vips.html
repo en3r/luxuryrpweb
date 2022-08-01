@@ -1,57 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vips.css">
-    <title>Luxury VIPS</title>
-</head>
-<body>
-  
-  <h1>
-    <div class="content-select">
-      <select>
-        <option>Option 1</option>
-        <option>Option 2</option>
-        <option>Option 3</option>
-      </select>
-      <i></i>
-    </div>
-  </h1>
-    <div class="contenedor_loader">
-        <div class="loader"></div>
-      </div>
-    <div class="l-container">
-        <div class="b-game-card">
-            <a href="https://cfx.re/join/dkqge3" target="_blank">
-          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_1.jpg);" href="https://cfx.re/join/dkqge3" target="_blank"></div>
-            </a>
-        </div>
-        <div class="b-game-card">
-            <a href="https://cfx.re/join/dkqge3" target="_blank">
-          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_2.jpg);"></div>
-            </a>
-        </div>
-        <div class="b-game-card">
-            <a href="https://cfx.re/join/dkqge3" target="_blank">
-          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_3.jpg);"></div>
-        </a> 
-        </div>
-        <div class="b-game-card">
-            <a href="https://cfx.re/join/dkqge3" target="_blank">
-          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_4.jpg);"></div>
-           </a>
-        </div>
-      </div>
-
-
-    <script src="./vips.js"></script>
-</body>
-</html> -->
-
-<!-- href="https://cfx.re/join/dkqge3" target="_blank"  -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -75,7 +21,12 @@
   <div class="contenedor_loader">
     <div class="loader"></div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+  <div class="cursor cursor--small"></div>
+  <canvas class="cursor cursor--canvas" resize></canvas>
   <!-- Header -->
+  
   <section id="header" >
     <div class="header container">
       <div class="nav-bar">
@@ -93,7 +44,7 @@
           </div>
           <ul>
             <li><a href="./index.html" data-after="Home">INICIO</a></li>
-            <!-- <li><a href="#projects" data-after="Projects">NORMATIVAS</a></li> -->
+            <li><a href="#projects" data-after="Projects">NORMATIVAS</a></li>
             <li><a href="#services" data-after="Service" class="activo"  >TIENDA</a></li>
             <!-- <li><a href="#about" data-after="About">SOBRE NOSOTROS</a></li> -->
             <!-- <li><a href="./forum.html" data-after="Contact">CONTACTO</a></li> -->
@@ -108,8 +59,7 @@
   <!-- End Header -->
 
   
-  
-  
+
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
@@ -129,93 +79,8 @@
       <img src="./img/luxury_logo.png" alt="img">
     </div>
   </a>
-  
-
-<!--   <div id="discord">
-    <div class="discord container">
-      <div>
-        <a href="https://discord.gg/9tdjhb75"  target="_blank" type="button" class="cta4">Sobre Nosotros </a>
-      </div>
-    </div>
-  </div> -->
-
-  
-  
-  
-  <!-- Projects Section -->
- <!--  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img">
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 2</h1>
-              <h2>Coding is Love</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-              </div>
-              <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-info">
-                <h1>Project 3</h1>
-                <h2>Coding is Love</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                  rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                  harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-                </div>
-                <div class="project-img">
-                  <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img">
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 5</h1>
-              <h2>Coding is Love</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-              </div>
-              <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Projects Section -->
-      
-      <!-- End Hero Section  -->
-    
+ 
+ 
     
       <!-- Service Section -->
       <section id="services">
@@ -250,69 +115,12 @@
           </div>
         </div>
       </section>
+
+      
     
       
       
-      <!-- End Service Section -->
-      
-      <!-- About Section -->
-      <!-- <section id="about">
-        <div class="about container" >
-          <div class="col-left" >
-            <div class="about-img" id="animacion3">
-              <img src="./img/img-2.png" alt="img">
-            </div>
-          </div>
-      <div class="col-right" >
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
-          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
-          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
-          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
-          reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section> -->
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
-  <!-- <section id="contact">
-    <div class="contact container">
-      <div class="navbar3">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="navbar2">
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 234 123 1234</h2>
-            <h2>+1 234 123 1234</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End Contact Section -->
+  
   
   
 <style>
