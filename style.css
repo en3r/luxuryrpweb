@@ -570,13 +570,12 @@ figure {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 3.5rem;
+	font-size: 4.5em;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	animation-delay: 1s;
-	
 }
 #hero h1:nth-child(1) {
 	animation-delay: 1s;
@@ -628,7 +627,14 @@ figure {
 
 #services .service-top {
 	max-width: 500px;
+	height: 190px;
 	margin: 0 auto;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+	border-top: 1px solid rgba(131, 131, 131, 0.815);
+	border-right: 1px solid rgba(131, 131, 131, 0.815);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 25px;
 
 }
 
@@ -640,6 +646,7 @@ figure {
 #services .service-top p{
 	font-size: 2.1rem;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
 }
 #services .service-bottom {
 	display: flex;
@@ -663,6 +670,11 @@ figure {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	box-shadow: 20px 200px 50px rgba(0, 0, 0, 0.25);
+	border-top: 1px solid rgba(131, 131, 131, 0.815);
+	border-right: 1px solid rgba(131, 131, 131, 0.815);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
 
 }
 
@@ -686,14 +698,14 @@ figure {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) ;
 	opacity: 0.9;
-	z-index: -1;
+	z-index: 10;
 }
 #services .service-bottom .icon {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
+	margin-left: 8em;
 }
 
 
@@ -711,11 +723,15 @@ figure {
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+
 }
 
 #services .service-item p {
-	color: white;
+	color: rgba(0, 0, 0, 0.894);
 	text-align: left;
+	font-family:'Franklin Gothic Medium';
+	font-stretch: expanded;
+	font-size: 1.8em;
 }
 
 h1::before {  
@@ -1039,7 +1055,7 @@ html {
 
 	/* Hero */
 	#hero h1 {
-		font-size: 4.2rem;
+		font-size: 5.2rem;
 	}
 	/* End Hero */
 
