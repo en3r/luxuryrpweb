@@ -628,7 +628,8 @@ figure {
 
 #header .nav-list ul li a.activo{
 	background: transparent;
-	border: 1px solid rgb(10, 145, 255);
+	/* border: 1px solid rgb(10, 145, 255); */
+	border-bottom: 1px solid rgb(10, 145, 255);
 	
   }
 @-webkit-keyframes desplazar {
