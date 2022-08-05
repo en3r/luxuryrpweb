@@ -11,7 +11,6 @@ hamburger.addEventListener('click', () => {
 });
 
 
-
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
@@ -40,33 +39,32 @@ window.addEventListener('scroll', function(){
 	
 })
 
+window.sr = ScrollReveal();
+  sr.reveal('.navbar', {
+    duration: 3000,
+    origin: 'top',
+    distance: '-500px'
+});
+window.sr = ScrollReveal();
+  sr.reveal('.navbar2', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-500px'
+});
 
-// window.sr = ScrollReveal();
-//   sr.reveal('.navbar', {
-//     duration: 3000,
-//     origin: 'top',
-//     distance: '-500px'
-// });
-// window.sr = ScrollReveal();
-//   sr.reveal('.navbar2', {
-//     duration: 3000,
-//     origin: 'left',
-//     distance: '-500px'
-// });
+window.sr = ScrollReveal();
+  sr.reveal('.navbar3', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-500px'
+});
 
-// window.sr = ScrollReveal();
-//   sr.reveal('.navbar3', {
-//     duration: 3000,
-//     origin: 'bottom',
-//     distance: '-500px'
-// });
-
-// window.sr = ScrollReveal();
-//   sr.reveal('.navbar4', {
-//     duration: 3000,
-//     origin: 'right',
-//     distance: '-500px'
-// });
+window.sr = ScrollReveal();
+  sr.reveal('.navbar4', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-500px'
+});
 
 
 
@@ -182,6 +180,8 @@ const initCanvas = () => {
 }
 
 initCanvas();
+
+
 
 
 

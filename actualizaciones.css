@@ -7,6 +7,7 @@
 	
 }
 
+
 body {
 	/* background-image: url("https://cdn.discordapp.com/attachments/800989018795409419/1002015834660671518/polish_save.png?width=1187&height=448"); */
 	background-color: rgba(153, 150, 145, 0.863);
@@ -718,26 +719,7 @@ figure {
 	border-right: 1px solid rgba(131, 131, 131, 0.815);
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	opacity: 0.5;
 
-}
-
-#services .service-item:hover{
-	animation: myAnim 1s ease 0s 1 normal forwards;
-	opacity: 1;
-	border-top: 1px solid rgb(10, 145, 255);
-	border-right: 1px solid rgb(10, 145, 255);
-}
-
-
-@keyframes myAnim {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
 }
 
 @keyframes mover {
